@@ -25,3 +25,62 @@ console.log(rx.source)
 ```
 The entire api is chainable, except for a few methods that will be described below
 
+### caseInsensitive
+This adds the case insensitive flag to the regex. Your expression will work on text regardless of lowercase/uppercase characters.
+
+### multiLine
+This adds the multiline flag to the regex. The start/end anchors will work on text that has newlines.
+
+### global
+This adds the global flag to the regex. This will return all matches found, not just the first.
+
+### dotAll
+This adds the dotAll flag to the regex. The wildcard character (.) will match on newlines.
+
+### sticky
+This adds the sticky flag to the regex. Will match patterns after a specified position in a string
+
+### unicode
+This adds the unicode flag. Treats the regex as a sequence of unicode code points.
+
+### startOfInput
+adds the (^) anchor to your expression
+
+### endOfInput
+adds the ($) anchor to your expression
+
+### anyChar
+add the (.) wildcard character
+
+### oneOrMore
+add the (+) one or more quantinfier
+
+### zeroOrMore
+add the (*) zero or more quantifier
+
+### optional
+add the (?) zero or one quantifier
+
+### exactly(count)
+add the {count} quantifier
+
+### atLeast(count)
+add the {count,} quantifier
+
+### between(min,max)
+add the {min,max} quantifier
+
+### string(text)
+add a string
+
+### digit
+add the (\d) digit character class
+
+### nonDigit
+add the (\D) non-digit character class
+
+### word
+add the (\w) alphanumeric character class [a-z,A-Z,0-9,_]
+
+### capture
+add a capture group
